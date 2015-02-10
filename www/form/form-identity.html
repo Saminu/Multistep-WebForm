@@ -1,0 +1,91 @@
+<!-- form-profile.html -->
+<div ng-form="identityForm">
+<h1><strong>Ok, just confirm your details</strong></h1><h2> Don’t worry your data is fully protected: we value your privacy!</h2>
+<br>
+<div class="form-group">
+        <div class="input-group">
+            <label class="sr-only" for="firstname"></label>
+
+            <div class="input-group-addon">First Name</div>
+            <input ng-model="formData.fName" type="text" class="form-control input-lg" name="firstname" id="firstname"
+                   placeholder="Your First Name" required>
+        </div>
+    </div>
+
+<div class="form-group">
+        <div class="input-group">
+            <label class="sr-only" for="lastname"></label>
+
+            <div class="input-group-addon">Last Name</div>
+            <input ng-model="formData.lName" type="text" class="form-control input-lg" name="lastname" id="lastname"
+                   placeholder="Your Last Name" required>
+        </div>
+    </div>
+
+<div class="form-group row">
+        <div class="col-md-12"><label>Date of Birth</label></div>
+        <div class="col-md-3 col-xs-12">
+            <div class="form-group">
+                <div class="input-group input-block-level">
+                    <label class="sr-only" for="DOBday"></label>
+                    <select ng-model="formData.DOB.day" ng-options="day for day in days" class="form-control input-lg" name="DOBday" id="DOBday" required>
+                        <option value="">Day</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-12">
+            <div class="form-group">
+                <div class="input-group input-block-level">
+                    <label class="sr-only" for="DOBmonth"></label>
+                    <select ng-model="formData.DOB.month" ng-options="month for month in months" class="form-control input-lg" name="DOBmonth" id="DOBmonth" required>
+                        <option value="">Month</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-12">
+            <div class="form-group">
+                <div class="input-group input-block-level">
+                    <label class="sr-only" for="DOByear"></label>
+                    <select ng-model="formData.DOB.year" ng-options="year for year in years" class="form-control input-lg" name="DOByear" id="DOByear" required>
+                        <option value="">Year</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6"></div>
+</div>
+
+<div class="form-group">
+    <div class="input-group">
+        <label class="sr-only" for="email"></label>
+
+        <div class="input-group-addon">Email Address</div>
+        <input ng-model="formData.email" type="email" class="form-control input-lg" name="email" id="email"
+               placeholder="example@domain.com" required>
+    </div>
+</div>
+
+
+
+<div class="form-group row">
+    <div class="col-md-1  col-xs-2 ">
+        <a ui-sref="form.status" class="btn btn-block form-back">
+            <span class="glyphicon glyphicon-circle-arrow-left"></span>
+        </a>
+    </div>
+    <div class="col-md-6 col-md-offset-5 col-xs-10">
+        <a ui-sref="form.personal" class="btn btn-block btn-lg btn-warning form-apply" ng-disabled="!identityForm.$valid">
+            Continue <span class="glyphicon glyphicon-circle-arrow-right"></span>
+        </a>
+    </div>
+</div>
+
+<div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+         aria-valuemax="100" style="width: 100%;">
+        100% Complete
+    </div>
+</div>
+</div>

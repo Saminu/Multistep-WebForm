@@ -1,0 +1,237 @@
+/* form styling */
+.form-container {
+  margin-bottom: 15px;
+  border-radius: 4px;
+  background: #efefef;
+}
+.form-container h1 {
+  font-family: ArialMT;
+  font-size: 44px;
+  color: #743a95;
+  line-height: 45px;
+  margin-bottom: 15px;
+}
+.form-container h2 {
+  font-family: ArialMT;
+  font-size: 36px;
+  color: #743A95;
+  line-height: 40px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+.form-container .page-header {
+  background: #151515;
+  margin: 0;
+  padding: 30px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.form-container .col-md-6 {
+  padding-left: 17px;
+}
+.form-container .fa {
+  color: #743a95;
+}
+.form-container .form-apply {
+  border-radius: 5px;
+  background: #ffc905;
+  border: 1px solid #EEA236;
+  color: #743a95;
+  font-family: HelveticaNeue-Bold;
+  font-size: 22px;
+  line-height: 28px;
+}
+.form-container .form-apply:hover {
+  background-color: #ebb800;
+  color: #8241a7;
+}
+.form-container .form-back {
+  color: #743a95;
+  font-family: HelveticaNeue-Bold;
+  font-size: 40px;
+  line-height: 12px;
+  padding: 0px;
+}
+.label-form {
+  font-family: HelveticaNeue;
+  font-size: 26px;
+  color: #666;
+  line-height: 32px;
+  font-weight: normal;
+}
+.form-group .btn-group input[type="radio"],
+.form-group .btn-group input[type="checkbox"] {
+  display: none;
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  line-height: normal;
+}
+.form-group .primary-color {
+  background-color: #743a95;
+  border-color: #663383;
+}
+.form-group .primary-color:active {
+  color: #fff;
+  background-color: #ffc905;
+  border-color: #743a95;
+}
+.form-group label {
+  font-family: HelveticaNeue;
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: normal;
+}
+.form-group .m-left8 {
+  margin-left: -8px;
+}
+@media (max-width: 768px) {
+  .form-group .m-left8 {
+    margin-left: 0px;
+  }
+}
+.form-group .input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+@media (max-width: 768px) {
+  .form-group .input-group {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .form-group .input-group select,
+  .form-group .input-group input {
+    margin-bottom: 15px;
+  }
+}
+.form-group .input-group-addon {
+  padding: 6px 12px;
+  font-weight: normal;
+  color: #ffffff;
+  text-align: center;
+  background-color: #743a95;
+  border: 1px solid #743a95;
+  border-bottom-left-radius: 4px !important;
+  border-top-left-radius: 4px !important;
+  font-family: HelveticaNeue;
+  font-size: 18px;
+  line-height: 22px;
+}
+.form-group .input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+}
+.input-group-addon {
+  border-radius: 4 !important;
+}
+/* numbered buttons */
+.status-buttons a {
+  color: #FFF;
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.status-buttons a:hover {
+  text-decoration: none;
+}
+.status-buttons span {
+  background: #080808;
+  display: block;
+  height: 30px;
+  margin: 0 auto 10px;
+  padding-top: 5px;
+  width: 30px;
+  border-radius: 50%;
+}
+.status-buttons a.active span {
+  background: #00BC8C;
+}
+/* style.css */
+/* ANIMATION STYLINGS
+============================================================================= */
+.signup-form {
+  position: relative;
+  min-height: 550px;
+  overflow: hidden;
+  padding: 15px 40px;
+}
+@media (max-width: 768px) {
+  .signup-form {
+    padding: 15px;
+  }
+}
+.form-views {
+  width: auto;
+}
+/* basic styling for entering and leaving */
+/* left and right added to ensure full width */
+.form-views.ng-enter,
+.form-views.ng-leave {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+}
+/* enter animation */
+.form-views.ng-enter {
+  -webkit-animation: slideInRight 0.5s both ease;
+  -moz-animation: slideInRight 0.5s both ease;
+  animation: slideInRight 0.5s both ease;
+}
+/* leave animation */
+.form-views.ng-leave {
+  -webkit-animation: slideOutLeft 0.5s both ease;
+  -moz-animation: slideOutLeft 0.5s both ease;
+  animation: slideOutLeft 0.5s both ease;
+}
+/* ANIMATIONS
+============================================================================= */
+/* slide out to the left */
+@keyframes slideOutLeft {
+  to {
+    transform: translateX(-200%);
+  }
+}
+@-moz-keyframes slideOutLeft {
+  to {
+    -moz-transform: translateX(-200%);
+  }
+}
+@-webkit-keyframes slideOutLeft {
+  to {
+    -webkit-transform: translateX(-200%);
+  }
+}
+/* slide in from the right */
+@keyframes slideInRight {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes slideInRight {
+  from {
+    -moz-transform: translateX(200%);
+  }
+  to {
+    -moz-transform: translateX(0);
+  }
+}
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translateX(200%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+  }
+}
+/* Have to set height explicity on ui-view
+to prevent collapsing during animation*/

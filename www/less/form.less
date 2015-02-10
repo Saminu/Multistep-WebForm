@@ -1,0 +1,427 @@
+@primary-colour: #743A95;
+@grey: #EFEFEF;
+@white: #FFFFFF;
+@secondary-color: #FFC905;
+
+/* form styling */
+.form-container {
+  margin-bottom: 15px;
+  border-radius: 4px;
+  background: @grey;
+
+  h1 {
+    font-family: ArialMT;
+    font-size: 44px;
+    color: @primary-colour;
+    line-height: 45px;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-family: ArialMT;
+    font-size: 36px;
+    color: #743A95;
+    line-height: 40px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  .page-header {
+    background: #151515;
+    margin: 0;
+    padding: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .col-md-6 {
+    padding-left: 17px;
+  }
+
+  .fa {
+    color: @primary-colour;
+  }
+  .form-apply {
+    border-radius: 5px;
+    background: @secondary-color;
+    border: 1px solid #EEA236;
+    color: @primary-colour;
+    font-family: HelveticaNeue-Bold;
+    font-size: 22px;
+    line-height: 28px;
+    &:hover {
+      background-color: darken(@secondary-color, 5%);
+      color: lighten(@primary-colour, 5%);
+    }
+  }
+
+  .form-back {
+    color: @primary-colour;
+    font-family: HelveticaNeue-Bold;
+    font-size: 40px;
+    line-height: 12px;
+    padding: 0px;
+  }
+}
+
+.label-form {
+  font-family: HelveticaNeue;
+  font-size: 26px;
+  color: #666;
+  line-height: 32px;
+  font-weight: normal;
+}
+
+.form-group {
+
+  .btn-group {
+
+    input[type="radio"], input[type="checkbox"] {
+      display: none;
+      margin: 4px 0 0;
+      margin-top: 1px \9;
+      line-height: normal;
+    }
+
+  }
+
+  .primary-color {
+    background-color: @primary-colour;
+    border-color: darken(@primary-colour, 5);
+
+    &:active {
+      color: #fff;
+      background-color: @secondary-color;
+      border-color: @primary-colour;
+    }
+  }
+
+  label {
+    font-family: HelveticaNeue;
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: normal;
+  }
+
+  .m-left8 {
+    margin-left: -8px;
+
+    @media (max-width: 768px) {
+      margin-left: 0px;
+    }
+  }
+
+  .input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+
+    select, input {
+      @media (max-width: 768px) {
+        margin-bottom: 15px;
+      }
+    }
+
+  }
+
+  .input-group-addon {
+    padding: 6px 12px;
+    font-weight: normal;
+    color: @white;
+    text-align: center;
+    background-color: @primary-colour;
+    border: 1px solid @primary-colour;
+    border-bottom-left-radius: 4px !important;
+    border-top-left-radius: 4px !important;
+
+    font-family: HelveticaNeue;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  // Block level inputs
+  .input-block-level {
+    display: block;
+    width: 100%;
+    min-height: 28px;
+  }
+
+}
+
+.input-group-addon {
+  border-radius: 4 !important;
+}
+
+/* numbered buttons */
+.status-buttons {
+
+  a {
+    color: #FFF;
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  span {
+    background: #080808;
+    display: block;
+    height: 30px;
+    margin: 0 auto 10px;
+    padding-top: 5px;
+    width: 30px;
+    border-radius: 50%;
+  }
+}
+
+.status-buttons a.active span {
+  background: #00BC8C;
+}
+
+/* style.css */
+/* ANIMATION STYLINGS
+============================================================================= */
+//#signup-form            { position:relative; min-height:300px; overflow:hidden; padding:30px; }
+
+.signup-form {
+  position: relative;
+  min-height: 550px;
+  overflow: hidden;
+  padding: 15px 40px;
+
+  @media (max-width: 768px) {
+    padding: 15px;
+  }
+}
+
+.form-views {
+  width: auto;
+}
+
+/* basic styling for entering and leaving */
+/* left and right added to ensure full width */
+.form-views.ng-enter,
+.form-views.ng-leave {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+}
+
+/* enter animation */
+.form-views.ng-enter {
+  -webkit-animation: slideInRight 0.5s both ease;
+  -moz-animation: slideInRight 0.5s both ease;
+  animation: slideInRight 0.5s both ease;
+}
+
+/* leave animation */
+.form-views.ng-leave {
+  -webkit-animation: slideOutLeft 0.5s both ease;
+  -moz-animation: slideOutLeft 0.5s both ease;
+  animation: slideOutLeft 0.5s both ease;
+}
+
+/* ANIMATIONS
+============================================================================= */
+/* slide out to the left */
+@keyframes slideOutLeft {
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+@-moz-keyframes slideOutLeft {
+  to {
+    -moz-transform: translateX(-200%);
+  }
+}
+
+@-webkit-keyframes slideOutLeft {
+  to {
+    -webkit-transform: translateX(-200%);
+  }
+}
+
+/* slide in from the right */
+@keyframes slideInRight {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes slideInRight {
+  from {
+    -moz-transform: translateX(200%);
+  }
+  to {
+    -moz-transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translateX(200%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+  }
+}
+
+//
+///* ANIMATION STYLINGS
+//============================================================================= */
+//.signup-form {
+//  position: relative;
+//  min-height: 550px;
+//  overflow: hidden;
+//  padding: 15px 40px;
+//
+//  @media (max-width: 768px) {
+//    padding: 15px;
+//  }
+//}
+//
+//.form-views {
+//  width: auto;
+//}
+//
+///* basic styling for entering and leaving */
+///* left and right added to ensure full width */
+//.form-views.ng-enter,
+//.form-views.ng-leave {
+//  position: absolute;
+//  left: 30px;
+//  right: 30px;
+//  transition: 0.5s all ease;
+//  -moz-transition: 0.5s all ease;
+//  -webkit-transition: 0.5s all ease;
+//}
+//
+///* enter animation */
+//.form-views.ng-enter {
+//  -webkit-animation: slideInRight 0.5s both ease;
+//  -moz-animation: slideInRight 0.5s both ease;
+//  animation: slideInRight 0.5s both ease;
+//}
+//
+///* leave animation */
+//.form-views.ng-leave {
+//  -webkit-animation: slideOutLeft 0.5s both ease;
+//  -moz-animation: slideOutLeft 0.5s both ease;
+//  animation: slideOutLeft 0.5s both ease;
+//}
+//
+///* ANIMATIONS
+//============================================================================= */
+///* slide out to the left */
+//@keyframes slideOutLeft {
+//  to {
+//    transform: translateX(-200%);
+//  }
+//}
+//
+//@-moz-keyframes slideOutLeft {
+//  to {
+//    -moz-transform: translateX(-200%);
+//  }
+//}
+//
+//@-webkit-keyframes slideOutLeft {
+//  to {
+//    -webkit-transform: translateX(-200%);
+//  }
+//}
+//
+///* slide in from the right */
+//@keyframes slideInRight {
+//  from {
+//    transform: translateX(200%);
+//  }
+//  to {
+//    transform: translateX(0);
+//  }
+//}
+//
+//@-moz-keyframes slideInRight {
+//  from {
+//    -moz-transform: translateX(200%);
+//  }
+//  to {
+//    -moz-transform: translateX(0);
+//  }
+//}
+//
+//@-webkit-keyframes slideInRight {
+//  from {
+//    -webkit-transform: translateX(200%);
+//  }
+//  to {
+//    -webkit-transform: translateX(0);
+//  }
+//}
+//
+//
+//
+//second-animation option
+
+/* Have to set height explicity on ui-view
+to prevent collapsing during animation*/
+
+//.well[ui-view]{
+//  height: 65px;
+//}
+//
+//.ui-view-container {
+//  position: relative;
+//}
+//
+//.form-steps.ng-enter, .form-steps.ng-leave {
+//  position: absolute;
+//  left: 0;
+//  right: 0;
+//  -webkit-transition:all .5s ease-in-out;
+//  -moz-transition:all .5s ease-in-out;
+//  -o-transition:all .5s ease-in-out;
+//  transition:all .5s ease-in-out;
+//}
+//
+//.form-steps.ng-enter {
+//  opacity: 0;
+//  -webkit-transform:scale3d(0.5, 0.5, 0.5);
+//  -moz-transform:scale3d(0.5, 0.5, 0.5);
+//  transform:scale3d(0.5, 0.5, 0.5);
+//}
+//
+//.form-steps.ng-enter-active {
+//  opacity: 1;
+//  -webkit-transform:scale3d(1, 1, 1);
+//  -moz-transform:scale3d(1, 1, 1);
+//  transform:scale3d(1, 1, 1);
+//}
+//
+//.form-steps.ng-leave {
+//  opacity: 1;
+//  -webkit-transform:translate3d(0, 0, 0);
+//  -moz-transform:translate3d(0, 0, 0);
+//  transform:translate3d(0, 0, 0);
+//}
+//
+//.form-steps.ng-leave-active {
+//  opacity: 0;
+//  -webkit-transform:translate3d(100px, 0, 0);
+//  -moz-transform:translate3d(100px, 0, 0);
+//  transform:translate3d(100px, 0, 0);
+//}

@@ -1,0 +1,66 @@
+.center-table table.listing {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+.center-table table.listing button {
+  background: url(../images/apply-now-btn.png) no-repeat;
+  width: 90px;
+  height: 36px;
+  padding: 0 1px 2px 1px;
+  border: none;
+  color: #fff;
+}
+.center-table table.listing button:hover {
+  color: #ccc;
+}
+.center-table table.listing thead {
+  vertical-align: middle;
+}
+.center-table table.listing th {
+  background: url(../images/table-head-bg.jpg) #f7f7f7 repeat-x bottom;
+  padding: 5px 3px;
+  color: #6b2992;
+  height: 20px;
+  border: 1px solid #CCC;
+  text-align: inherit;
+}
+.center-table table.listing td {
+  vertical-align: middle;
+  padding: 5px;
+}
+.center-table table.listing td p {
+  line-height: normal;
+}
+.center-table table.listing td img {
+  width: 100px;
+}
+.center-table table.listing td .apply {
+  color: #fff;
+  display: block;
+  font-size: 13px;
+  line-height: 32px;
+  height: 40px;
+  width: 90px;
+  text-align: center;
+  background: url(/images/apply-now-btn.png) no-repeat 0 0;
+  -moz-border-radius: 4px;
+  /* Firefox */
+  -webkit-border-radius: 4px;
+  /* Safari, Chrome */
+  border-radius: 4px;
+  /* CSS3 */
+  margin-left: auto;
+  margin-right: auto;
+}
+.center-table table.listing td .apply:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+.center-table table.listing td.apr-message {
+  background-color: #eef8fe;
+  font: normal 11px/11px Arial, Helvetica, sans-serif;
+}
+.center-table table.listing td.align-right {
+  text-align: right;
+}
